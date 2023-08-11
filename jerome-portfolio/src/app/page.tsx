@@ -99,7 +99,7 @@ export default function Home() {
                 <div className="flex flex-col justify-center items-center ">
                   <div className="text-left text-white text-3xl mobile:text-4xl tablet:text-6xl ">
                   Hi.
-                  <span className='block'>I'm <span className="text-purple-300"> Jerome </span></span>
+                  <span className='block'>I&apos;m <span className="text-purple-300"> Jerome </span></span>
                   <span> A Software Developer</span>
                   </div>
             </div>                
