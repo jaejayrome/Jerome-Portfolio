@@ -19,6 +19,7 @@ import Portrait from '../images/removed_p.png'
 import LightModeIcon from '@mui/icons-material/LightMode';
 import Tools from './tools';
 import Navbar from './navbar';
+import {motion} from 'framer-motion';
 
 export default function Home() {
 
@@ -61,6 +62,23 @@ export default function Home() {
     return () => window.removeEventListener('resize', updateMedia);
   }, []);
 
+  const roles = ['Frontend Developer', 'Backend Developer', 'Data Scientist']
+
+  const moveUp = {
+    hidden: { 
+    opacity: 0,
+    y: 20, 
+    transition: { type: "spring", stiffness: 100}
+    },
+    visible: {
+      opacity: 1, 
+      x: 0, 
+      y: 0, 
+      transition: { type: "spring", stiffness: 100, delay: 1, ease: 'linear' }
+    }
+    }
+  
+
   return (
     // Background Container
     <div className="bg-black min-h-screen pt-5"> 
@@ -96,13 +114,13 @@ export default function Home() {
           <section id = "Introduction & Three.JS Portion">
             <div>
               {/* Main Page */}
-                <div className="flex flex-col justify-center items-center ">
+                <motion.div variants={moveUp} initial = "hidden" animate = "visible" className="flex flex-col justify-center items-center ">
                   <div className="text-left text-white text-3xl mobile:text-4xl tablet:text-6xl ">
                   Hi.
                   <span className='block'>I&apos;m <span className="text-purple-300"> Jerome </span></span>
                   <span> A Software Developer</span>
                   </div>
-            </div>                
+            </motion.div>                
             </div>
           </section>
 
