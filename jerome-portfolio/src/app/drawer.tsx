@@ -3,6 +3,9 @@ import { Drawer, IconButton } from "@mui/material"
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
 import { styled } from '@mui/material/styles';
 import {Link} from 'react-scroll'
+// import DrawerButton from '../images/icons_422593.svg'
+import DrawerButton from '../images/hamburger.jpeg'
+import Image from "next/image";
 
 export default function NavbarDrawer() {
 
@@ -22,6 +25,10 @@ export default function NavbarDrawer() {
             <IconButton className='hover:scale-110 text-white duration-200 focus:text-purple-300' onClick={toggleDrawer}>
                 <Logo  />
             </IconButton> 
+
+            {/* <button onClick={toggleDrawer} className="group text-white  duration-200 hover:scale-110"> 
+                <Image src = {DrawerButton} alt = "" className="w-10 h-10 hover:text-purple-300"/>
+            </button> */}
 
             <Drawer PaperProps={{sx: {width: "100%", height: "15%", backgroundColor: "black"}}} anchor="top" open={open} onClose={toggleDrawer}> 
 

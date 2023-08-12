@@ -1,6 +1,9 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter, Teko } from 'next/font/google'
+import { ThemeProvider } from "./theme-provider";
+import { ThemeSwitcher } from "./themeSwitcher";
+// import { switchThemeDuration } from "./constants";
 
 const inter = Inter({ subsets: ['latin'],
 variable: '--font-inter' })
@@ -24,7 +27,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${teko.variable}`}>{children}
+      <body className={`${inter.variable} ${teko.variable}`}>
+      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <main>{children}</main>
+        </ThemeProvider>
       </body>
     </html>
   )

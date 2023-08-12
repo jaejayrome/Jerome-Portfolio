@@ -45,11 +45,11 @@ export default function About() {
 
     return (
         <div>
-            <div className="text-white font-topLeft text-4xl"> 
+            <div className="dark:text-white text-slate-600 font-topLeft text-4xl"> 
                 About Me
             </div>
 
-            <motion.div className="flex flex-wrap max-w-1/2 text-slate-400 px-6 overflow-hidden" variants={container} initial= "hidden" animate= "visible">
+            <motion.div className="flex flex-wrap max-w-1/2 text-slate-700 dark:text-slate-400 px-6 overflow-hidden" variants={container} initial= "hidden" animate= "visible">
 
                 <div className='flex flex-wrap'>
                 {letters.map((word, index) => (

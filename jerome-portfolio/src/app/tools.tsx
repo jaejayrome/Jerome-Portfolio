@@ -22,7 +22,7 @@ export default function Tools() {
 
     return (
         <div>
-            <div className="text-white text-4xl font-bold font-topLeft mb-2 ">Proficient In </div>
+            <div className="text-slate-600 dark:text-white text-4xl font-bold font-topLeft mb-2 ">Proficient In </div>
             {/* <div className="leading-5 text-left mx-auto text-slate-400 mb-10">
                 These are the technologies I have learnt thus far either in my modules, side projects, internships or self-learnt through courses.
             </div> */}
