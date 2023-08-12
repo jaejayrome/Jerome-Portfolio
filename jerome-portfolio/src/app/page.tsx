@@ -74,7 +74,7 @@ export default function Home() {
       opacity: 1, 
       x: 0, 
       y: 0, 
-      transition: { type: "spring", stiffness: 100, delay: 1, ease: 'linear' }
+      transition: { type: "spring", stiffness: 100, delay: 0.5, ease: 'linear' }
     }
     }
   

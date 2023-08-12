@@ -2,9 +2,14 @@ import {motion} from 'framer-motion';
 
 export default function About() {
     
-    const text : string = "Year 2 Information Systems student with a second major in quantitative finance studying at the National University of Singapore. I enjoy coding as a hobby because nothing in the world is more satisfying than solving bugs. My first experience with code was self learning Java after my national service. Asides from that, I currently learn Korean as a third language and plan to take my exchange studies there!";
-    
+    const text : string = "Year 2 Information Systems student with a second major in Quantitative Finance studying at the National University of Singapore.";
+    const text2: string = "I enjoy coding as a hobby because nothing in the world is more satisfying than solving bugs. "
+    const text3: string = "My first experience with code was self learning Java after my national service."
+    const text4: string = "Asides from that, I currently learn Korean as a third language and plan to take my exchange studies there!";
     const letters : string[] = Array.from(text)
+    const letters2: string[] = Array.from(text2)
+    const letters3: string[] = Array.from(text3)
+    const letters4: string[] = Array.from(text4)
 
     const container = {
         hidden: {opacity: 0},
@@ -44,12 +49,44 @@ export default function About() {
                 About Me
             </div>
 
-            <motion.div className="flex flex-wrap max-w-1/2 text-slate-400 px-6 " variants={container} initial= "hidden" animate= "visible">
+            <motion.div className="flex flex-wrap max-w-1/2 text-slate-400 px-6 overflow-hidden" variants={container} initial= "hidden" animate= "visible">
+
+                <div className='flex flex-wrap'>
                 {letters.map((word, index) => (
-                    <motion.span variants={child} key={index}>
+                    <motion.p variants={child} key={index}>
                         {word === " " ? "\u00A0" : word}
-                    </motion.span>
+                    </motion.p>
                 ))}
+                </div>
+
+          
+                <div className='flex flex-wrap'>
+                {letters2.map((word, index) => (
+                <motion.p variants={child} key={index}>
+                    {word === " " ? "\u00A0" : word}
+                </motion.p>
+                ))} 
+                </div>
+
+
+                <div className='flex flex-wrap'>
+                {letters3.map((word, index) => (
+                <motion.p variants={child} key={index}>
+                    {word === " " ? "\u00A0" : word}
+                </motion.p>
+                ))} 
+                </div>
+
+
+                <div className='flex flex-wrap'>
+                {letters4.map((word, index) => (
+                <motion.p variants={child} key={index}>
+                    {word === " " ? "\u00A0" : word}
+                </motion.p>
+                ))} 
+                </div>
+
+                
                 
             </motion.div>
             
