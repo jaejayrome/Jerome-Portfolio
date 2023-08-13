@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Drawer, IconButton } from "@mui/material"
 import ViewHeadlineIcon from '@mui/icons-material/ViewHeadline';
 import { styled } from '@mui/material/styles';
+import { useTheme } from "next-themes";
 import {Link} from 'react-scroll'
 // import DrawerButton from '../images/icons_422593.svg'
 import DrawerButton from '../images/hamburger.jpeg'
@@ -11,6 +12,7 @@ export default function NavbarDrawer() {
 
     // this component is in charge of opening and closing the drawer for mobile layouts
     const [open, setOpen] = useState(false)
+    const { theme, setTheme } = useTheme();
 
     const Logo = styled(ViewHeadlineIcon)`
     font-size: 2.5rem;
@@ -20,10 +22,16 @@ export default function NavbarDrawer() {
         setOpen(!open)
     }
 
+    const styles = {
+        whichMode: {
+            fill:  theme === "dark" ? "white" : "black"
+        }
+    }
+
     return (
         <div>
-            <IconButton className='hover:scale-110 text-white duration-200 focus:text-purple-300' onClick={toggleDrawer}>
-                <Logo  />
+            <IconButton className='hover:scale-110  duration-200 focus:text-purple-300' onClick={toggleDrawer}>
+                <Logo style={styles.whichMode} />
             </IconButton> 
 
             {/* <button onClick={toggleDrawer} className="group text-white  duration-200 hover:scale-110"> 

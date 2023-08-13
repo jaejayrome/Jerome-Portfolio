@@ -49,7 +49,7 @@ export default function About() {
                 About Me
             </div>
 
-            <motion.div className="flex flex-wrap max-w-1/2 text-slate-700 dark:text-slate-400 px-6 overflow-hidden" variants={container} initial= "hidden" animate= "visible">
+            <motion.div className="flex flex-wrap max-w-1/2 text-slate-700 dark:text-slate-400 px-6 overflow-hidden text-lg mobile:text-2xl leading-" variants={container} initial= "hidden" animate= "visible">
 
                 <div className='flex flex-wrap'>
                 {letters.map((word, index) => (
