@@ -23,9 +23,6 @@ export default function Tools() {
     return (
         <div>
             <div className="text-slate-600 dark:text-white text-4xl font-bold font-topLeft mb-2 ">Proficient In </div>
-            {/* <div className="leading-5 text-left mx-auto text-slate-400 mb-10">
-                These are the technologies I have learnt thus far either in my modules, side projects, internships or self-learnt through courses.
-            </div> */}
         <div className="grid grid-cols-2 gap-4 p-5">
 
             <div className="bg-gradient-to-r from-indigo-400 to-teal-400 p-[4px] relative rounded-lg">
@@ -78,7 +75,7 @@ export default function Tools() {
         
                     <div className="grid grid-cols-1 text-sm tablet:grid-cols-2 gap-6 tablet:text-lg "> 
                         <div className="flex flex-row space-x-2">
-                            <Image src = {NodeLogo} alt="" className="w-10 h-10 tablet:w-12 tablet:h-12"/>
+                            <Image src = {NodeLogo} alt="" className="w-10 h-10 tablet:w-12 tablet:h-12 object-contain"/>
                             <div className="pt-2 tablet:pt-4">
                                 Node.js
                             </div>

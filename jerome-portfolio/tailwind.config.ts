@@ -9,8 +9,10 @@ const config: Config = {
   ],
   theme: {
     screens: {
+      'iphone': '420px',
       'mobile' : '570px',
       'tablet' : '648px',
+      'laptop' : '1024px'
     },
     extend: {
       backgroundImage: {

@@ -1,6 +1,10 @@
 import { Link } from "react-scroll";
 import { motion, animate, stagger, easeIn } from "framer-motion";
 import { useEffect } from "react";
+import InfoIcon from '@mui/icons-material/Info';
+import HomeIcon from '@mui/icons-material/Home';
+import CodeIcon from '@mui/icons-material/Code';
+import ContactsIcon from '@mui/icons-material/Contacts';
 
 
 export default function Navbar() {
@@ -9,27 +13,33 @@ export default function Navbar() {
     const staggerLinks = stagger(0.1, { ease: easeIn, startDelay: 0.1 });
 
     useEffect(() => {
-        animate(".links", {opacity: 1, scale: 1.15, filter: "blur(0px)"}, {duration: 0.2, delay: staggerLinks})
+        animate(".links", {opacity: 1, scale: 1.2, filter: "blur(0px)"}, {duration: 0.2, delay: staggerLinks})
     }, [])
 
    
 
 
     return (
-        <ul className="flex flex-row text-lg justify-evenly p-4 text-white tablet:text-xl overflow-hidden space-x-2">
-       
-                <Link to = "about" spy={true} smooth={true} offset={300} duration={500} className="hover:bg-cyan-400 dark:hover:bg-purple-400 rounded-xl px-2 py-6 bg-black shadow-cyan-400 dark:shadow-purple-400 shadow-2xl mobile:px-6 mobile:py-10 links"> About</Link>
-
-                <div className="flex justify-center items-center links">
-                <Link to = "about" spy={true} smooth={true} offset={300} duration={500} className="hover:bg-cyan-400 dark:hover:bg-purple-400 rounded-xl px-2 py-6 bg-black shadow-cyan-400 dark:shadow-purple-400  shadow-2xl mobile:px-6 mobile:py-10"> Experience</Link>
+        <ul className="grid grid-cols-2 gap-10 mobile:grid-cols-4 justify-around items-center py-20 text-white">
+                <div className=" flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
+                    <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                        About
+                    </Link>
                 </div>
-
-                <div className="flex justify-center items-center links">
-                <Link to = "about" spy={true} smooth={true} offset={300} duration={500} className="hover:bg-cyan-400 dark:hover:bg-purple-400 rounded-xl px-2 py-6 bg-black shadow-cyan-400 dark:shadow-purple-400  shadow-2xl mobile:px-6 mobile:py-10"> Projects</Link>
+                <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
+                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                        Experience
+                    </Link>
                 </div>
-
-                <div className="flex justify-center items-center links">
-                <Link to = "about" spy={true} smooth={true} offset={300} duration={500} className="hover:bg-cyan-400 dark:hover:bg-purple-400 rounded-xl px-2 py-6 bg-black shadow-cyan-400 dark:shadow-purple-400  shadow-2xl mobile:px-6 mobile:py-10"> Contact </Link>
+                <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
+                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                        Projects
+                    </Link>
+                </div>
+                <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
+                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                        Contact
+                    </Link>
                 </div>
 
         </ul>
