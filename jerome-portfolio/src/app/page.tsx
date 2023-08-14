@@ -76,7 +76,7 @@ export default function Home() {
       <div className="flex flex-col space-x-4 space-y-24">
 
         <section id="home">
-          <div className='h-screen bg-center bg-cover bg-no-repeat bg-origin-border' style={{ backgroundImage: `url(/images/background.png)` }}>
+          <div className='h-screen bg-center bg-cover bg-no-repeat bg-origin-border overflow-hidden' style={{ backgroundImage: `url(/images/background.png)` }}>
           <section id = "Navbar at the top">
               <div className="flex flex-row w-full relative ">
 
