@@ -21,7 +21,7 @@ export default function Projects() {
 
                 <div className="flex flex-col justify-center items-center mt-5">
                     
-                    <div className="shrink-0 grow-0 p-6 mx-12 rounded-xl bg-slate-300 dark:bg-slate-600 flex flex-col justify-around space-x-6 items-center ">
+                    <div className="shrink-0 grow-0 p-8 mx-12 tablet:mx-20 laptop:mx-36 laptop:p-20 rounded-xl bg-slate-300 dark:bg-slate-600 flex flex-col justify-around space-x-6 items-center ">
 
                     <Image src={NUSMarkt_H} alt = "" className="shrink-0 grow-0 object-contain rounded-xl"></Image>
         
@@ -61,7 +61,7 @@ export default function Projects() {
                             <div className="flex flex-col justify-evenly items-center mt-10">
 
                                 <div className="grid grid-cols-4 gap-2 mobile:gap-4 tablet:gap-6 laptop:gap-10">
-                                    {/* <div className="italic text-md tablet:text-lg">Built With </div> */}
+                                    
                                     <Image src={ReactLogo} alt = "" className="w-10 h-10 object-contain tablet:h-12 tablet:w-12"></Image>
                                     <Image src={FirebaseLogo} alt = "" className="w-10 h-10 object-contain tablet:h-12 tablet:w-12"></Image>
                                     <Image src={NodeJSLogo} alt = "" className="w-10 h-10 object-contain tablet:h-12 tablet:w-12"></Image>
