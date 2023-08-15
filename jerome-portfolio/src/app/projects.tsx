@@ -21,7 +21,7 @@ export default function Projects() {
 
                 <div className="flex flex-col justify-center items-center mt-5">
                     
-                    <div className="shrink-0 grow-0 p-6 mx-12 rounded-xl bg-slate-600 flex flex-col justify-around space-x-6 items-center ">
+                    <div className="shrink-0 grow-0 p-6 mx-12 rounded-xl bg-slate-300 dark:bg-slate-600 flex flex-col justify-around space-x-6 items-center ">
 
                     <Image src={NUSMarkt_H} alt = "" className="shrink-0 grow-0 object-contain rounded-xl"></Image>
         
@@ -41,7 +41,7 @@ export default function Projects() {
                                 </p>
 
                                 <p>
-                                Include Messaging & Review Feature and integrated Sentiment Classifier Model using Huggingface's Inference API. 
+                                Include Messaging & Review Feature and integrated Sentiment Classifier Model using Huggingface&apos;s Inference API. 
                                 </p>
                                 
                                 <p>

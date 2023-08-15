@@ -22,7 +22,7 @@ export default function Tools() {
 
     return (
         <div>
-            <div className="text-slate-600 dark:text-white text-4xl font-bold font-topLeft mb-2 ">Proficient In </div>
+            <div className="text-slate-600  dark:text-white text-4xl font-bold font-topLeft mb-2 ">Proficient In </div>
         <div className="grid grid-cols-2 gap-4 p-5">
 
             <div className="bg-gradient-to-r from-indigo-400 to-teal-400 p-[4px] relative rounded-lg">

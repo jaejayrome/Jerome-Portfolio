@@ -85,7 +85,7 @@ export default function Home() {
                 <div className=" text-white absolute top-0 left-0 pt-3 pl-3 mobile:pt-6 mobile:pl-6">
                   <div className="flex flex-row space-x-4">
                     <Image src={TopLeftLogo} alt= "" className='w-10 h-10'></Image>
-                    <div className='text-slate-600 dark:text-white text-2xl pt-2 font-topLeft'>
+                    <div className='text-white text-2xl pt-2 font-topLeft'>
                     jerome-dev
                     </div>
                   </div>
@@ -98,9 +98,9 @@ export default function Home() {
               <div className='my-20'>
                 {/* Main Page */}
                   <motion.div variants={moveUp} initial = "hidden" animate = "visible" className="flex flex-col justify-center items-center ">
-                    <div className="text-left text-slate-600 dark:text-white text-3xl mobile:text-4xl tablet:text-6xl ">
+                    <div className="text-left text-white text-3xl mobile:text-4xl tablet:text-6xl ">
                       Hi.
-                      <span className='block'>I&apos;m <span className="text-purple-600 dark:text-purple-300"> Jerome </span></span>
+                      <span className='block'>I&apos;m <span className="text-purple-300"> Jerome </span></span>
                       <span> A Software Developer</span>
                     </div>
               </motion.div>                
