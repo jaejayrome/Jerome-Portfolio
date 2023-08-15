@@ -8,8 +8,13 @@ import AlignLeftLightIcon from '../images/align_light.png'
 import AlignLeftDarkIcon from '../images/align_dark.png'
 import TypeScriptFileIcon from '../images/typescript_file.svg'
 
-export default function About() {
-    const {theme, setTheme} = useTheme()
+interface Theme {
+    theme: string | undefined
+}
+
+export default function About(props: Theme) {
+    const { theme } = props;
+    // const {theme, setTheme} = useTheme()
     const ProgressCircle = styled(CircularProgress)`
         font-size: 2.5rem;
     `;
@@ -45,9 +50,7 @@ export default function About() {
             <div className="dark:text-white text-slate-600 font-topLeft text-4xl"> 
                 About Me
             </div>
-
-            <div className="flex-col justify-center items-center">
-                <div className="flex-col flex tablet:flex-row justify-between items-center">
+            {theme !== undefined ? <div className="flex-col flex tablet:flex-row justify-between items-center">
                     <div className= 'p-2 w-3/4 mobile:w-1/2'>
                         <Image src = {FaceLogo} alt = "" className='object-contain '></Image>
                     </div>
@@ -67,7 +70,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> name </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}> &#61; </div>
                                     <div className='text-[#e67e00]'>&apos;Jerome Goh&apos;</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#59;</div>
                                 </div>
@@ -158,7 +161,9 @@ export default function About() {
                         </div>
 
                     </div>
-                </div>
+                </div> : <div> </div>}
+            <div className="flex-col justify-center items-center">
+                
 
                 <div className="grid grid-cols-2 gap-4 mt-5 mb-10">
                     <div className='flex flex-col justify-center items-center'>

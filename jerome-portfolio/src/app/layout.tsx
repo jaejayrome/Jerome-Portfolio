@@ -4,6 +4,7 @@ import { Inter, Teko } from 'next/font/google'
 import { ThemeProvider } from "./theme-provider";
 import { ThemeSwitcher } from "./themeSwitcher";
 import Navbar from './navbar';
+import Footer from './footer';
 // import { switchThemeDuration } from "./constants";
 
 const inter = Inter({ subsets: ['latin'],
@@ -30,9 +31,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${teko.variable}`}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-      
         {children}
       </ThemeProvider>
+      <Footer />
       </body>
     </html>
   )

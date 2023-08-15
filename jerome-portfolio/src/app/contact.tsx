@@ -18,12 +18,12 @@ export default function Contact(){
         font-size: 40px;
     `
     return (
-        <div className="h-screen">
+        <div className="">
             <div className="font-topLeft text-4xl mobile:text-4xl">
                 Contact Me
             </div>
 
-            <div className='mt-20 flex flex-col justify-center items-center space-y-2 text-md mobile:text-lg tablet:text-xl'>
+            <div className='mt-10 mb-10 flex flex-col justify-center items-center space-y-2 text-lg mobile:text-xl tablet:text-2xl'>
                 <div className="">
                     I&apos;m looking for more opportunities in the tech space.
                 </div>
@@ -57,6 +57,7 @@ export default function Contact(){
                     </IconButton>
                 
                 </div>
+                
             </div>
         </div>
     )

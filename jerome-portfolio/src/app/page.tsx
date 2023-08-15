@@ -26,6 +26,8 @@ import Background from '../images/background.png'
 import Contact from './contact';
 import Projects from './projects';
 
+
+
 export default function Home() {
 
   const [isMobile, setMobile] = useState(false);
@@ -103,6 +105,7 @@ export default function Home() {
                       <span className='block'>I&apos;m <span className="text-purple-300"> Jerome </span></span>
                       <span> A Software Developer</span>
                     </div>
+
               </motion.div>                
               </div>
             </section>
@@ -110,13 +113,6 @@ export default function Home() {
             <section>
               <Navbar></Navbar>
             </section>
-
-
-            {/* <section>
-              <div className='text-center font-topLeft text-2xl mt-10'>
-                {theme && (<div> You are currently in { <span className='dark:text-black shadow-lg dark:shadow-purple-600'> {theme} </span>} mode </div>) }
-              </div>
-            </section> */}
 
             </div>
         </section>
@@ -127,7 +123,7 @@ export default function Home() {
 
           <section id='about me section'>
             <div  id='about'>
-              <About />
+              <About theme = {theme}/>
             </div>
           </section>
 
