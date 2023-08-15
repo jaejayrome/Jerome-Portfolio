@@ -1,20 +1,16 @@
 import { Link } from "react-scroll";
-import { motion, animate, stagger, easeIn } from "framer-motion";
-import { useEffect } from "react";
-import InfoIcon from '@mui/icons-material/Info';
-import HomeIcon from '@mui/icons-material/Home';
-import CodeIcon from '@mui/icons-material/Code';
-import ContactsIcon from '@mui/icons-material/Contacts';
+// import { motion, animate, stagger, easeIn } from "framer-motion";
+// import { useEffect } from "react";
 
 
 export default function Navbar() {
 
 
-    const staggerLinks = stagger(0.1, { ease: easeIn, startDelay: 0.1 });
+    // const staggerLinks = stagger(0.1, { ease: easeIn, startDelay: 0.1 });
 
-    useEffect(() => {
-        animate(".links", {opacity: 1, scale: 1.2, filter: "blur(0px)"}, {duration: 0.2, delay: staggerLinks})
-    }, [])
+    // useEffect(() => {
+    //     animate(".links", {opacity: 1, scale: 1.2, filter: "blur(0px)"}, {duration: 0.2, delay: staggerLinks})
+    // }, [])
 
    
 
@@ -27,17 +23,17 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
-                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                <Link to = "experiences" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
                         Experience
                     </Link>
                 </div>
                 <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
-                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                <Link to = "projects" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
                         Projects
                     </Link>
                 </div>
                 <div className="flex justify-center items-center links text-lg mobile:text-xl tablet:text-2xl laptop:text-3xl">
-                <Link to = "about" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
+                <Link to = "contact" spy={true} smooth={true} offset={-50} duration={500} className="font-topLeft"> 
                         Contact
                     </Link>
                 </div>

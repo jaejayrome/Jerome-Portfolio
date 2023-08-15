@@ -24,6 +24,7 @@ import { ThemeSwitcher } from './themeSwitcher';
 import { useTheme } from 'next-themes';
 import Background from '../images/background.png'
 import Contact from './contact';
+import Projects from './projects';
 
 export default function Home() {
 
@@ -140,6 +141,12 @@ export default function Home() {
           <section id = 'skills'>
             <div className='mx-auto'>
               <Tools/>
+            </div>
+          </section>
+
+          <section id = 'projects'>
+            <div>
+              <Projects />
             </div>
           </section>
 

@@ -11,10 +11,10 @@ import FastAPILogo from '../images/fastest.png'
 import PrismaLogo from '../images/prismal.png'
 import DockerLogo from '../images/docker12.webp'
 import PythonLogo from '../images/pyt.png'
-import JavasriptLogo from '../images/javascript_logo.webp'
+import ReactLogo from '../images/react-logo.png'
 import NodeLogo from '../images/node_real.png'
 import MuiLogo from '../images/mui_logo.png'
-import FirebaseLogo from '../images/firebase-logo.png'
+import FirebaseLogo from '../images/firebase_r.png'
 
 
 export default function Experience() {
@@ -196,7 +196,7 @@ export default function Experience() {
 
                         <div className="flex flex-row justify-start items-start">
                             <div className="grid grid-cols-4 gap-2">
-                                <Image src = {JavasriptLogo} className="w-10 h-10 tablet:w-12 tablet:h-12" alt = ""></Image>
+                                <Image src = {ReactLogo} className="w-10 h-10 tablet:w-12 tablet:h-12" alt = ""></Image>
                                 <Image src = {NodeLogo} className="w-10 h-10 tablet:w-12 tablet:h-12 object-contain" alt = ""></Image>
                                 <Image src = {MuiLogo} className="w-10 h-10 tablet:w-12 tablet:h-12" alt = ""></Image>
                                 <Image src = {FirebaseLogo} className="w-10 h-10 tablet:w-12 tablet:h-12" alt = ""></Image>

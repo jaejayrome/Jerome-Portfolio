@@ -30,7 +30,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} ${teko.variable}`}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <main>{children}</main>
+      
+        {children}
       </ThemeProvider>
       </body>
     </html>
