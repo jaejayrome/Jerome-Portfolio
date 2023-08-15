@@ -67,7 +67,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> name </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className='text-[#e67e00]'>&apos;Jerome Goh&apos;</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#59;</div>
                                 </div>
@@ -77,7 +77,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> age </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> number </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className={theme === "dark" ? 'text-[#ADFF2F]' : 'text-pink-400' }>22</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#59;</div>
                                 </div>
@@ -87,7 +87,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> unviersity </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className='text-[#e67e00]'>&apos;National University of Singapore&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;&#59;</div>
                                     </div>
@@ -99,7 +99,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> primary_major </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className='text-[#e67e00]'>&apos;Information Systems&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;&#59;</div>
                                     </div>
@@ -111,7 +111,7 @@ export default function About() {
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> secondary_major </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className='text-[#e67e00]'>&apos;Quantitative Finance&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;&#59;</div>
                                     </div>
@@ -125,7 +125,7 @@ export default function About() {
                                     <div className='text-[#32ae85]'> string </div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#124;</div>
                                     <div className='text-[#32ae85]'> null </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#61;</div>
                                     <div className='text-[#587EA8]'>null</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#59;</div>
                                 </div>
