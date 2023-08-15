@@ -41,7 +41,7 @@ export default function About() {
     };
 
     return (
-        <div className='h-screen'>
+        <div className=''>
             <div className="dark:text-white text-slate-600 font-topLeft text-4xl"> 
                 About Me
             </div>
