@@ -65,9 +65,9 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> name </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className='text-[#e67e00]'>&apos;Jerome Goh&apos;</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>;</div>
                                 </div>
@@ -75,9 +75,9 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> age </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> number </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className={theme === "dark" ? 'text-[#ADFF2F]' : 'text-pink-400' }>22</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>;</div>
                                 </div>
@@ -85,9 +85,9 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> unviersity </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className='text-[#e67e00]'>&apos;National University of Singapore&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;;</div>
                                     </div>
@@ -97,9 +97,9 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> primary_major </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className='text-[#e67e00]'>&apos;Information Systems&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;;</div>
                                     </div>
@@ -109,9 +109,9 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> secondary_major </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className='text-[#e67e00]'>&apos;Quantitative Finance&apos;
                                     <div className={theme === "dark" ? 'text-white inline-block' : 'text-black inline-block'}>&nbsp;;</div>
                                     </div>
@@ -121,11 +121,11 @@ export default function About() {
                                 <div className='flex flex-row space-x-2'>
                                     <div className='text-[#587EA8]'>const</div>
                                     <div className = {theme === "dark" ? 'text-[#add7ff]' : 'text-purple-500'}> specialisation </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>:</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#58;</div>
                                     <div className='text-[#32ae85]'> string </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>|</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&#124;</div>
                                     <div className='text-[#32ae85]'> null </div>
-                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>=</div>
+                                    <div className={theme === "dark" ? 'text-white' : 'text-black'}>&equals;</div>
                                     <div className='text-[#587EA8]'>null</div>
                                     <div className={theme === "dark" ? 'text-white' : 'text-black'}>;</div>
                                 </div>
@@ -158,14 +158,9 @@ export default function About() {
                         </div>
 
                     </div>
-
-                    
                 </div>
 
-             
-                
-
-                <div className="grid grid-cols-2 gap-4 mt-5">
+                <div className="grid grid-cols-2 gap-4 mt-5 mb-10">
                     <div className='flex flex-col justify-center items-center'>
                         <div className='mb-2'> Year of Study </div>
                         <Box sx={{ position: 'relative', display: 'inline-flex', flexShrink: 0, flexGrow: 0}}>
